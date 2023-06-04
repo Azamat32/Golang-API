@@ -1,0 +1,27 @@
+{{template "header"}}
+    <div class="group">
+      <div class="container">
+        <div class="group_wrap">
+          {{range .}}
+          <div class="Group_card">
+            <div class="Group_card_banner">
+              <img src="{{.Image}}" alt="" />
+            </div>
+            <div class="Group_card_text">
+              <p>Group Name : {{.Name}}</p>
+              <p>Group Members : {{range .Members}} {{.}} , {{end}}</p>
+              <p>Group Creation Date : {{.CreationDate}}</p>
+              <!-- <p>Group First Album : {{.FirstAlbum}}</p>
+              <p>Group Locations : {{.Locations}}</p>
+              <p>Group ConcertDates : {{.ConcertDates}}</p>
+              <p>Group Relations : {{.Relations}}</p> -->
+                <a href=/show/{{.ID}}>Show more</a>
+
+            </div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{{template "header"}}
+    <div class="Group_Personal_Page">
+      <div class="container">
+        <a href="/" class="backbtn"> Go home</a>
+        <div class="Group_card_Personal">
+          <div class="Group_card_banner">
+            <img src="{{.GroupPersonal.Image}}" alt="" />
+          </div>
+          <div class="Group_card_text">
+            <h1>{{.GroupPersonal.Name}}</h1>
+            <p>
+              Group Members : {{range .GroupPersonal.Members}} {{.}} , {{end}}
+            </p>
+            <p>Group Creation Date : {{.GroupPersonal.CreationDate}}</p>
+            <p>Group First Album : {{.GroupPersonal.FirstAlbum}}</p>
+          </div>
+          <div class="group_concerts">
+            <div class="group_concerts_title">
+              <h1>Concerts dates and locations</h1>
+            </div>
+            <div class="group_concerts_wrap">
+              <div class="dates">
+                {{range .Dates.Dates}}
+                <p>{{.}}</p>
+                {{end}}
+              </div>
+              <br />
+              <div class="locations">
+                {{range .Places.Places}}
+                <p>{{.}}</p>
+                {{end}}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

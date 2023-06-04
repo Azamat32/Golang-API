@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  margin-bottom: 30px;
+  background: #b7c4cf;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Group_card {
+  background: #b7c4cf;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.group_wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+}
+.Group_card p {
+  color: #967e76;
+}
+.Group_card .Group_card_banner {
+  height: 30vh;
+}
+.Group_card .Group_card_text {
+  padding: 10px;
+}
+ .Group_card {
+  width: 100%;
+}
+.Group_card img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.group{
+  background: #EEE3CB;
+padding-top: 20px;
+}
+.Group_card a{
+    display: block;
+        background: #967e76;
+    padding: 5px;
+        color: #f7aa66;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.Group_card a:hover{
+    background: #f7aa66; 
+    color: #967e76;
+
+}
+
+/* Personal info */
+.Group_Personal_Page{
+  margin-top: 50px;
+}
+.backbtn{
+  background: #b7c4cf;
+  padding: 5px;
+  color: #fbe4dd;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.backbtn:hover{
+  background: #fbe4dd;
+  color: #b7c4cf;
+
+}
+.Group_card_Personal{
+  background: #b7c4cf;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px 20px rgb(151, 151, 151);
+  color: #fbe4dd;
+  margin-top: 30px;
+  padding: 10px;
+}
+.group_concerts_wrap{
+  display: flex;
+  gap: 20px;
+}
+.dates, .locations{
+  display: flex;
+  flex-direction: column;
+}
+/*Personal info end*/ 
+
+
+@media (max-width:780px){
+  .group_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+}@media (max-width:480px){
+  .group_wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .header_inner{
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+
